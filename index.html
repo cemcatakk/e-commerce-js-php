@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Üst menüde, logo, giriş yap ve kayıt ol kısımlarının olduğu bölüm. burası için HTML5 ile yeni gelen nav etiketini kullandım.  -->
+    <nav>
+      <a href="index.html" class="logo">LOGO</a>
+      <div class="actions">
+        <a href="#">Giriş Yap</a>
+        <a href="#">Kayıt Ol</a>
+      </div>
+    </nav>
+    <!--Slayt için div oluşturulur-->
+    <div class="urunler-container">
+      <div class="slayt-container">
+        <!--Slayt içerisine resimler yerleştirilir-->
+        <div class="slide_div fade">
+          <div class="sayi">1 / 3</div>
+          <img src="img/1.png" style="width:100%" />
+        </div>
+
+        <div class="slide_div fade">
+          <div class="sayi">2 / 3</div>
+          <img src="img/3.webp" style="width:100%" />
+        </div>
+
+        <div class="slide_div fade">
+          <div class="sayi">3 / 3</div>
+          <img src="img/5.jpg" style="width:100%" />
+        </div>
+        <!--Önceki ve Sonraki düğmeleri yerleştirilir-->
+        <a class="onceki" onclick="slaytGoster(-1)">&#10094;</a>
+        <a class="sonraki" onclick="slaytGoster(1)">&#10095;</a>
+      </div>
+      <br />
+      <!--Üç adet nokta eklenerek, tıklanarak slayt değiştirilmesi sağlanır-->
+      <div style="text-align:center">
+        <span class="nokta" onclick="aktifSlayt(1)"></span>
+        <span class="nokta" onclick="aktifSlayt(2)"></span>
+        <span class="nokta" onclick="aktifSlayt(3)"></span>
+      </div>
+    </div>
+    <!-- anasayfada asıl alanı kaplayan yer. sol tarafta menü ve sol tarafta ürünler yer alıyor -->
+    <div class="urunler ">
+      <!-- sol taraftaki, diğer sayfalara gidiş yapmayı sağlayan menü. buradan diğer sayfalara linkler verilmiştir, bütün sayfayı buradan gezebilirsiniz -->
+      <div class="menu">
+        <a href="index.html">Anasayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="contact.html">İletişim</a>
+        <a href="Sepet.php">Sepet</a>
+      </div>
+
+      <!-- anasayfadaki ürünlerin yer aldığı bölüm. bütün ürünler bu alanda sergilenir. ürünlere tıklayınca ürünlerin detayına gidebilirsiniz. -->
+
+      <div class="urunler-container">
+        <!-- urun, anasayfadaki her bir ürüne denk gelmektedir. her bir ürünün kendine ait özellikleri var.  -->
+        <div class="urun">
+          <img
+            src="https://s.turkcell.com.tr//SiteAssets/Cihaz/notebook-tablet/samsung/galaxy-tab-a7/cg/4.png"
+          />
+          <div class="urun-detay">
+            <a href="product-detail.html" class="urun-baslik"
+              >Samsung Galaxy Tab A7</a
+            >
+            <p class="urun-aciklama">
+              10.4 inç WUXGA+ ekran size canlı, sürükleyici bir içerik deneyimi
+              sunar. 16.6:10 oran daha iyi bir video izleme deneyimi için daha
+              ince kenarlar sunar. Modern görünüm & his için güzel, minimalistik
+              bir tasarım. Metal tasarım sofistike bir stil kazandırır.
+            </p>
+            <p class="urun-taksit">Taksit Seçenekleri: <b>3-6-9-12</b></p>
+            <p class="renk-secenekleri">
+              Renk Seçekleri: <b>Kırmızı - Siyah</b>
+            </p>
+            <div class="fiyat-container">
+              <p class="fiyat">1299₺</p>
+              <a href="product-detail.html" class="satin-al">Ürün Detayı</a>
+              <form action="satinal.php" method="post">
+                <input type="hidden" name="urunadi" value="Samsung Galaxy Tab A7">
+                <input type="hidden" name="fiyat" value="1299">
+                <input type="submit" class="satin-al" value="Satın Al" name="satinal">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="urun">
+          <img src="img/2.1_-1280x800-IPS-Tablet-Siyah-ZA4G0072TR" />
+          <div class="urun-detay">
+            <a href="product-detail.html" class="urun-baslik">Lenovo Tab M10</a>
+            <p class="urun-aciklama">
+              10.4 inç WUXGA+ ekran size canlı, sürükleyici bir içerik deneyimi
+              sunar. 16.6:10 oran daha iyi bir video izleme deneyimi için daha
+              ince kenarlar sunar. Modern görünüm & his için güzel, minimalistik
+              bir tasarım. Metal tasarım sofistike bir stil kazandırır.
+            </p>
+            <p class="urun-taksit">Taksit Seçenekleri: <b>3-6-9-12</b></p>
+            <p class="renk-secenekleri">
+              Renk Seçekleri: <b>Beyaz - Kırmızı - Siyah</b>
+            </p>
+            <div class="fiyat-container">
+              <p class="fiyat">1599₺</p>
+              <a href="product-detail.html" class="satin-al">Ürün Detayı</a>
+              <form action="satinal.php" method="post">
+                <input type="hidden" name="urunadi" value="Lenovo Tab M10" />
+                <input type="hidden" name="fiyat" value="1599" />
+                <input
+                  type="submit"
+                  class="satin-al"
+                  value="Satın Al"
+                  name="satinal"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="urun">
+          <img src="img/3.webp" />
+          <div class="urun-detay">
+            <a href="product-detail.html" class="urun-baslik"
+              >Samsung Galaxy Tab M18</a
+            >
+            <p class="urun-aciklama">
+              İnce tasarımı, heyecan veren eğlence sistemi ve üstün performansı
+              ile yeni A7 tüm şıklığıyla günlük hayatınıza renk katan bir rehber
+              olmaya hazır. Yapmayı sevdiğiniz şeyleri yapmaya hemen başlayın ve
+              en güzel anlarınızı kolayca paylaşın. Öğrenin, araştırın, bağlayın
+              ve yaratıcılığınızı ortaya çıkarın.
+            </p>
+            <p class="urun-taksit">Taksit Seçenekleri: Yok</p>
+            <p class="renk-secenekleri">Renk Seçekleri: <b>Siyah</b></p>
+            <div class="fiyat-container">
+              <p class="fiyat">699₺</p>
+              <a href="product-detail.html" class="satin-al">Ürün Detayı</a>
+              <form action="satinal.php" method="post">
+                <input
+                  type="hidden"
+                  name="urunadi"
+                  value="Samsung Galaxy Tab M18"
+                />
+                <input type="hidden" name="fiyat" value="699" />
+                <input
+                  type="submit"
+                  class="satin-al"
+                  value="Satın Al"
+                  name="satinal"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="urun">
+          <img src="img/4.webp" />
+          <div class="urun-detay">
+            <a href="product-detail.html" class="urun-baslik"
+              >Samsung Galaxy S7</a
+            >
+            <p class="urun-aciklama">
+              Son derece kapsamlı deneyimler sunan göz alıcı Galaxy Tab s7’nin
+              tasarımında etkileyicilik ön plandadır. Estetik bir simetrinin ve
+              ince bir zevkin ürünü olan, yalnızca 7 mm kalınlığındaki metal
+              tasarımlı gövdesinin; Koyu Gri, Gümüş ve Altın olmak üzere üç
+              farklı rengi ve tüm çevresini kaplayan simetrik bir çerçevesi
+              bulunmaktadır.
+            </p>
+            <p class="urun-taksit">Taksit Seçenekleri: <b>3-6-9-12</b></p>
+            <p class="renk-secenekleri">Renk Seçekleri: <b>Beyaz - Siyah</b></p>
+            <div class="fiyat-container">
+              <p class="fiyat">999₺</p>
+              <a href="product-detail.html" class="satin-al">Ürün Detayı</a>
+              <form action="satinal.php" method="post">
+                <input type="hidden" name="urunadi" value="Samsung Galaxy S7" />
+                <input type="hidden" name="fiyat" value="999" />
+                <input
+                  type="submit"
+                  class="satin-al"
+                  value="Satın Al"
+                  name="satinal"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="urun">
+          <img src="img/5.jpg" />
+          <div class="urun-detay">
+            <a href="product-detail.html" class="urun-baslik">Apple Ipad Pro</a>
+            <p class="urun-aciklama">
+              iPad Pro, 11", Wi-Fi, Liquid Retina, IPS, 2388x1668, A12Z Bionic,
+              1TB, 802.11ax Wi-Fi 6, Bluetooth 5.0, USB C, Wide 12MP + Ultra
+              Wide 10MP, 7MP, LiDAR, Face ID, iPadOS
+            </p>
+            <p class="urun-taksit">Taksit Seçenekleri: <b>3-6-9-12</b></p>
+            <p class="renk-secenekleri">Renk Seçekleri: <b>Koyu Gri</b></p>
+            <div class="fiyat-container">
+              <p class="fiyat">2299₺</p>
+              <a href="product-detail.html" class="satin-al">Ürün Detayı</a>
+              <form action="satinal.php" method="post">
+                <input type="hidden" name="urunadi" value="Apple IPad Pro" />
+                <input type="hidden" name="fiyat" value="2299" />
+                <input
+                  type="submit"
+                  class="satin-al"
+                  value="Satın Al"
+                  name="satinal"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="urun">
+          <img src="img/6.9_-Wi-Fi-256GB-Tablet-Gold" />
+          <div class="urun-detay">
+            <a href="product-detail.html" class="urun-baslik"
+              >Huawei MediaPad T5 10</a
+            >
+            <p class="urun-aciklama">
+              HUAWEI MediaPad T5 premium, rafine zevklere hitap edecek şekilde
+              tasarlanmış gövdesi ile göz alıcı. Özenle üretilmiş hafif
+              (yaklaşık 460 g) ve simetrik metal gövdesi sayesinde kolayca
+              tutulabilir ve taşınabilir.
+            </p>
+            <p class="urun-taksit">Taksit Seçenekleri: <b>3-6-9-12</b></p>
+            <p class="renk-secenekleri">Renk Seçekleri: <b>Siyah</b></p>
+            <div class="fiyat-container">
+              <p class="fiyat">899₺</p>
+              <a href="product-detail.html" class="satin-al">Ürün Detayı</a>
+              <form action="satinal.php" method="post">
+                <input
+                  type="hidden"
+                  name="urunadi"
+                  value="Huawei MediaPad T5 10"
+                />
+                <input type="hidden" name="fiyat" value="899" />
+                <input
+                  type="submit"
+                  class="satin-al"
+                  value="Satın Al"
+                  name="satinal"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- en alt kısımdaki footer alanı. burada, sol taraftaki menülerin aynısı bulunmakta -->
+    <footer>
+      <a href="index.html">Anasayfa</a>
+      <a href="hakkimizda.html">Hakkımızda</a>
+      <a href="contact.html">İletişim</a>
+      <a href="Sepet.php">Sepet</a>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

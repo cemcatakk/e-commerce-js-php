@@ -1,0 +1,566 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none !important;
+  outline: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+nav {
+  background: #1d1da1;
+  color: #fff;
+  height: 100%;
+  padding: 16px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .actions a {
+  font-size: 14.5px;
+  font-weight: 400;
+  padding: 8px 16px;
+  background: #05054b;
+  border: 1px solid #05054b;
+}
+
+nav .actions a:hover {
+  background: none;
+  color: #05054b;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+nav a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a {
+  border-radius: 8px;
+}
+
+.urunler {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  margin: 32px;
+}
+
+.urunler .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.urunler .menu a {
+  margin-top: 16px;
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 16px;
+  margin-right: 12px;
+  color: #fff;
+  background: #1d1da1;
+  border: 2px solid #1d1da1;
+}
+
+.urunler .menu a:hover {
+  background: none;
+  color: #1d1da1;
+}
+
+.urunler .urunler-container .urun {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #eee;
+  -webkit-box-shadow: -3px 3px 6px #ccc;
+          box-shadow: -3px 3px 6px #ccc;
+  border-radius: 4px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.urunler .urunler-container .urun img {
+  width: 360px;
+}
+
+.urunler .urunler-container .urun .urun-detay {
+  padding: 20px 0px;
+}
+
+.urunler .urunler-container .urun .urun-detay .urun-baslik {
+  font-size: 24px;
+  font-weight: bold;
+  color: #05054b;
+}
+
+.urunler .urunler-container .urun .urun-detay .urun-aciklama {
+  margin: 12px 0px;
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 16px;
+}
+
+.urunler .urunler-container .urun .urun-detay .renk-secenekleri {
+  margin: 12px 0px;
+}
+
+.urunler .urunler-container .urun .urun-detay .fiyat-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.urunler .urunler-container .urun .urun-detay .fiyat-container .fiyat {
+  background: none;
+  border: 2px solid #1d1da1;
+  width: 45px;
+  color: #1d1da1;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.urunler .urunler-container .urun .urun-detay .fiyat-container .satin-al {
+  background: #1d1da1;
+  color: #fff;
+  padding: 8px 16px;
+  margin-left: 12px;
+  border: 2px solid #1d1da1;
+}
+
+.urunler .urunler-container .urun .urun-detay .fiyat-container .satin-al:hover {
+  background: none;
+  color: #1d1da1;
+}
+
+.urunler .urunler-container .urun:hover {
+  -webkit-box-shadow: -6px 6px 10px #ccc;
+          box-shadow: -6px 6px 10px #ccc;
+}
+
+.hakkimizda {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.hakkimizda .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hakkimizda .menu a {
+  margin-top: 16px;
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 16px;
+  margin-right: 12px;
+  width: 100%;
+  color: #fff;
+  background: #1d1da1;
+  border: 2px solid #1d1da1;
+}
+
+.hakkimizda .menu a:hover {
+  background: none;
+  color: #1d1da1;
+}
+
+.hakkimizda h5 {
+  margin-top: 120px;
+  margin-bottom: 32px;
+  font-size: 32px;
+  text-align: left;
+}
+
+.hakkimizda p {
+  text-align: left;
+  margin-bottom: 100px;
+  background: #1d1da1;
+  padding: 12px;
+  color: #fff;
+}
+
+.urunler-anasayfa {
+  margin: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.urunler-anasayfa h5 {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.urunler-anasayfa a {
+  padding: 24px;
+  background: #1d1da1;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.product-detail-container {
+  margin: 72px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.product-detail-container .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product-detail-container .menu a {
+  margin-top: 16px;
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 16px;
+  margin-right: 12px;
+  width: 100%;
+  color: #fff;
+  background: #1d1da1;
+  border: 2px solid #1d1da1;
+}
+
+.product-detail-container .menu a:hover {
+  background: none;
+  color: #1d1da1;
+}
+
+.product-detail-container img {
+  width: 280px;
+  border: 1px solid #eee;
+  padding: 48px 12px;
+  -webkit-box-shadow: -6px 6px 10px #ccc;
+          box-shadow: -6px 6px 10px #ccc;
+  border-radius: 4px;
+}
+
+.product-detail-container .product-detail .header {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.product-detail-container .product-detail .price {
+  font-size: 20px;
+  color: dimgray;
+  margin-bottom: 16px;
+}
+
+.product-detail-container .product-detail .ek-ozellikler {
+  font-size: 13px;
+  font-weight: bold;
+  color: #575757;
+  margin-bottom: 60px;
+}
+
+.product-detail-container .product-detail .kupon {
+  text-align: center;
+  -webkit-box-shadow: -6px 6px 10px #ccc;
+          box-shadow: -6px 6px 10px #ccc;
+  padding: 8px;
+  border: 1px solid #eee;
+  margin-bottom: 60px;
+}
+
+.product-detail-container .product-detail .firsatlar {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.product-detail-container .product-detail ul li {
+  font-size: 13.5px;
+  margin-bottom: 16px;
+}
+
+.product-detail-container .product-detail .color-header {
+  margin-top: 32px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.product-detail-container .product-detail .renkler {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 24px;
+}
+
+.product-detail-container .product-detail .renkler a {
+  width: 100%;
+  padding: 12px;
+  background: red;
+  text-align: center;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.product-detail-container .product-detail .renkler a:nth-child(2) {
+  background: #000 !important;
+}
+
+.product-detail-container .product-detail .renkler a:nth-child(3) {
+  background: #1d1da1;
+}
+
+.product-detail-container .product-detail .renkler a:last-child {
+  background: orange;
+}
+
+table {
+  margin-top: 48px !important;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+table th {
+  background: #222222;
+  color: #fff;
+}
+
+table tr,
+table thead,
+table tbody,
+table td,
+table th {
+  border: 1px solid #1d1da1;
+  padding: 8px;
+  text-align: center;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-container .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-container .menu a {
+  margin-top: 16px;
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 16px;
+  margin-right: 12px;
+  width: 100%;
+  color: #fff;
+  background: #1d1da1;
+  border: 2px solid #1d1da1;
+}
+
+.contact-container .menu a:hover {
+  background: none;
+  color: #1d1da1;
+}
+
+.contact-container input,
+.contact-container textarea,
+.contact-container a {
+  width: 50%;
+  margin: 24px;
+  padding: 16px;
+}
+
+.contact-container a {
+  background: #1d1da1;
+  border: 2px solid #1d1da1;
+  color: #fff;
+  text-align: center;
+}
+
+.contact-container a:hover {
+  background: none;
+  color: #1d1da1;
+}
+
+footer {
+  margin-top: 90px;
+  background: #05055c;
+  padding: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer a {
+  color: #fff;
+  margin: 0px 16px;
+}
+.slayt-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slide_div {
+  display: none;
+}
+
+.onceki, .sonraki {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.sonraki {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.onceki:hover, .sonraki:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.sayi {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.nokta {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.aktifslayt, .nokta:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
